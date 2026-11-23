@@ -1,3 +1,41 @@
+> **Ovia Inc fork** — forked from [ShinMegamiBoson/lookatmyquant](https://github.com/ShinMegamiBoson/lookatmyquant). Modifications by Ovia Inc: a fun README header with original banner and gag artwork in `assets/`, plus playful styling at the top. The upstream code and documentation below are otherwise unchanged. Credit to the original author for all of the work. Licence: MIT (see `LICENSE`).
+
+<p align="center">
+  <img src="assets/media-generation-lookatmyquant-banner-0-67abde03-6aa8-4854-8c52-1694a93929fe.png" alt="Look At My Quant — a huge AI model squeezed through a carnival funnel into a tiny laptop" width="100%">
+</p>
+
+<h1 align="center">🎪 𝗟𝗢𝗢𝗞 𝗔𝗧 𝗠𝗬 𝗤𝗨𝗔𝗡𝗧 🎪</h1>
+
+<p align="center">
+  <b>Big brain. Tiny file. Zero drama.</b><br>
+  A quantization compiler that squeezes enormous models into pocket-sized files — and keeps the smarts.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/bits_per_weight-as_low_as_1.65-ff69b4?style=for-the-badge" alt="As low as 1.65 bits per weight">
+  <img src="https://img.shields.io/badge/shrink_record-53.7GB_to_7.2GB-8a2be2?style=for-the-badge" alt="Shrink record: 53.7 GB to 7.2 GB">
+  <img src="https://img.shields.io/badge/licence-MIT-yellow?style=for-the-badge" alt="MIT licence">
+</p>
+
+<p align="center">
+  <img src="assets/media-generation-lookatmyquant-big-tiny-0-94bae2e6-1dbd-4050-b5fd-073c1665349e.png" alt="An entire elephant folded into one small suitcase" width="520">
+</p>
+
+<p align="center"><i>The whole elephant. One small suitcase. That is the entire idea.</i></p>
+
+### 🏆 The trophy shelf
+
+| The squeeze | Before | After | The punchline |
+|---|---|---|---|
+| Qwen3.8-27B | 53.7 GB | **7.2 GB** | Solves as many of the 540 math problems as the original |
+| Inkling-2-Mini | 18.89 GB | **5.38 GB** | 1.65 bits per weight, still 88.0% on GSM8K |
+| Qwen3.5-4B | the full model | **1.23 GB** | 2.3 bits per weight, about $34 of GPU time |
+| Gemma 4 E2B | Q4_K_M, same file size | **same size** | 12× lower KL than Q4_K_M |
+
+*The full method, the recipes and the receipts are in the upstream documentation below — unchanged.*
+
+---
+
 # LookAtMyQuant
 
 LookAtMyQuant is a quantization compiler. It measures how much each stored piece of a model hurts the output when compressed. It then picks a code for each piece so the whole model fits a size budget with the least damage.
